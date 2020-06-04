@@ -1,0 +1,19 @@
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../assets/images/todoBgVector.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  font-size: 1.5rem;
+  margin-top: 10vh;
+}
+
+header,
+.tagline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

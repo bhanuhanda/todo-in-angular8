@@ -1,0 +1,14 @@
+<form (ngSubmit)="enterTodo(todoForm)" #todoForm="ngForm">
+  <input type="text" id="todoInput" class="todo-input" placeholder="enter your task here" name="todoInput" ngModel
+    #todoInpRef='ngModel' required />
+  <button *ngIf="todoInpRef.valid" class="todo-button" type="submit">
+    <!-- <button [disabled]="!todoInpRef.valid" class="todo-button" type="submit"> -->
+    <i class="fa fa-plus"></i>
+  </button>
+</form>
+<!-- <span class="errMsg" *ngIf="!todoInpRef.valid && todoInpRef.touched">Please enter some Todo</span> -->
+<div class="todo-container">
+  <ul class="todo-list">
+    <app-todo-item></app-todo-item>
+  </ul>
+</div>
