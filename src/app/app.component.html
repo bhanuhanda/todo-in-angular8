@@ -1,10 +1,22 @@
 <div class="main-container">
-  <header>
-    <h1>Quick Log your Tasks</h1>
-  </header>
-  <div class="tagline">
-    <h4><em>motivation is worthless without setting goals.</em></h4>
+  <div class="navigation-container">
+    <nav class="navbar navbar-default">
+      <ul class="nav navbar-nav">
+        <li routerLink="">All Todos</li>
+        <li routerLink="important">Marked as Important</li>
+      </ul>
+    </nav>
+  </div>
+  <div class="right-container">
+    <header>
+      <h1>Quick Log your Tasks</h1>
+    </header>
+    <div class="tagline">
+      <h4><em>motivation is worthless without setting goals.</em></h4>
+    </div>
+
+    <!-- <app-todo-list></app-todo-list> -->
+    <router-outlet></router-outlet>
   </div>
 
-  <app-todo-list></app-todo-list>
 </div>

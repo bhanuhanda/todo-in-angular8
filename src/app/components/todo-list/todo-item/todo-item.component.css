@@ -19,7 +19,8 @@
 }
 
 .completed-btn,
-.delete-btn {
+.delete-btn,
+.important-btn {
   background-color: rgb(255, 66, 66);
   color: #fff;
   border: none;
@@ -30,6 +31,10 @@
 
 .completed-btn {
   background-color: rgb(58, 213, 58);
+}
+
+.important-btn {
+  background-color: rgb(120, 58, 213);
 }
 
 .fa-trash,
@@ -47,4 +52,8 @@
   transform: translateY(1rem);
   opacity: 0;
   transition: all 0.3s ease;
+}
+
+.markedImportant {
+  color: rgb(255, 164, 60);
 }

@@ -6,6 +6,21 @@
   background-repeat: no-repeat;
 }
 
+.navigation-container {
+  width: 15%;
+  height: 100%;
+  border: 1px solid #000;
+  float: left;
+
+}
+
+.right-container {
+  width: 85%;
+  height: 100%;
+  float: left;
+
+}
+
 header {
   font-size: 1.5rem;
   margin-top: 10vh;
@@ -16,4 +31,11 @@ header,
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+ul li {
+  background: #e6e6e6;
+  margin: 0.1rem;
+  padding: 0.5rem 0.2rem;
+  cursor: pointer;
 }

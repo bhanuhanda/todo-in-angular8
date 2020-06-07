@@ -1,6 +1,14 @@
-<div class="todo" *ngFor="let todo of todos" [ngClass]="{'deleted': todo.todoDeleted}">
-  <li class="todo-item" [ngClass]="{'completed': todo.todoCompleted}">
-    {{todo.todoLabel}}</li>
-  <button class="completed-btn" (click)="toggleCompleted(todo)"><i class="fa fa-check"></i></button>
-  <button class="delete-btn" (click)="deleteTodo(todo)"><i class="fa fa-trash"></i></button>
+<div class="todo" *ngFor="let todo of todos" [ngClass]="{ deleted: todo.todoDeleted }">
+  <li class="todo-item" [ngClass]="{ completed: todo.todoCompleted }">
+    {{ todo.todoLabel }}
+  </li>
+  <button class="important-btn" [ngClass]="{ markedImportant: todo.todoImportant }" (click)="toggleImportant(todo)">
+    <i class="fa fa-star"></i>
+  </button>
+  <button class="completed-btn" (click)="toggleCompleted(todo)">
+    <i class="fa fa-check"></i>
+  </button>
+  <button class="delete-btn" (click)="deleteTodo(todo)">
+    <i class="fa fa-trash"></i>
+  </button>
 </div>
